@@ -1,0 +1,60 @@
+.sideContactGrid {
+    display: grid;
+    grid-template-areas: 'arrow icons';
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -10%;
+    /* bottom: 2%; */
+}
+
+.leftArrow {
+    grid-area: arrow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+}
+.iconsSide {
+    grid-area: icons;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    overflow: hidden; 
+    height: 0;
+    transition: height 0.5s ease; /* Add transition effect */
+}
+
+.leftArrow.rotate {
+    transform:  rotate(180deg);
+}
+.iconsSide.show {
+    height: 150px; 
+}
+
+.leftArrow .bx {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: goldenrod;
+    cursor: pointer;
+}
+.iconsSide h4 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.iconsSide .bx {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* color: goldenrod; */
+    cursor: pointer;
+}

@@ -1,0 +1,113 @@
+.horizonFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #7fcbd7;
+    overflow: hidden;
+}
+/* .horizonFlex h3 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: auto;
+    font-weight: 800;
+} */
+.horizonGrid {
+    display: grid;
+    grid-template-areas: 'horizonG1 HorizonG2';
+    grid-template-columns: 40% 60%;
+    max-width: 100vw;
+    padding: 5px;
+    gap: 20px;
+}
+.horizon1 {
+    grid-area: horizonG1;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.flexhorizon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+.flexhorizon h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizon1 button {
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.horizon1 button:hover {
+    height: 50px;
+    width: 100px;
+    background-color: goldenrod;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.scroll-container {
+    grid-area: HorizonG2;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+    & img {
+        object-fit: cover;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+}
+.prev-button {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+.next-button {
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.grid-item {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 300px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.grid-item img {
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}

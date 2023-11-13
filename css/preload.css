@@ -1,0 +1,29 @@
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h2 {
+        font-size: 40px;
+        color: goldenrod;
+        background-color: transparent;
+    }
+  }
+
+  /* Hide content until the preloader is removed */
+  .navbro {
+    display: none;
+  }
+  .introWeb {
+    display: none;
+  }
+  .gridintro {
+    display: none;
+  }
+  

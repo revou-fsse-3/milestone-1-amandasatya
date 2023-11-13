@@ -1,0 +1,133 @@
+.introMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fcbd7;
+    & h1 {
+        padding: 5px;
+        margin: 5px;
+        background-color: transparent;
+        font-family: 'Cooper Bold';
+        height: 50px;
+    }
+    & h3 {
+        padding: 0;
+        margin: 5px;
+        background-color: transparent;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        max-width: auto;
+    }
+}
+
+.flexgrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.gridintro {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    /* grid-gap: 50px; */
+    margin: 10px;
+}
+
+.flexcols1 img,
+.flexcols2 img,
+.flexcols3 img,
+.flexcols4 img {
+    height: 200px; /* Set a fixed height */
+    width: 100%; /* Set width to 100% for responsiveness */
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+}
+
+.flexcols1 h2,
+.flexcols2 h2,
+.flexcols3 h2,
+.flexcols4 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width:1300px) {
+    .flexgrid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .gridintro {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        /* column-gap: 200px; */
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+    .flexcols1 h2,.flexcols2 h2,.flexcols3 h2,.flexcols4 h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        pad: 0;
+    }
+}
+@media (max-width:700px) {
+    .introMain h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        font-family: 'Cooper Bold';
+        font-size: 15px;
+    }  
+    .introMain h3 {
+        padding: 0px;
+        margin: 0;
+        background-color: transparent;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        max-width: auto;
+    }
+    .flexgrid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gridintro {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        /* grid-gap: 20px; */
+        /* gap: 20px; */
+        padding: 10px;
+        height: auto;
+        width: auto;
+        margin: 0;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .flexcols1 h2,.flexcols2 h2,.flexcols3 h2,.flexcols4 h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    /* .gridintro3, .gridintro4 {
+        display: none;
+    } */
+}

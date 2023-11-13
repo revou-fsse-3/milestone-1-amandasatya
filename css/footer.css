@@ -1,0 +1,150 @@
+.flexfoot1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke;
+    gap: 30px;
+    height: auto;
+    width: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    & h1 {
+        font-size: 40px;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    
+}
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+}
+.flexEmail {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: transparent;
+    margin-top: 20px;
+    & input{
+        /* border:black; */
+        height: 50px;
+        width: 35rem;
+        border-radius: 20px;
+        color: black;
+        border-color: black;
+        background-color: white;
+    }
+    & a{
+        background-color: transparent;
+    }
+}
+.flexEmail button{
+    background-color: black;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+.flexDesc {
+    background-color: transparent;
+    & h5 {
+        font-size: 20px;
+        background-color: transparent;
+    }
+}
+.flexFoot2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #7fcbd7;
+}
+.flexContainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: transparent;
+    & img {
+        height: auto;
+        width: 160px;
+        background-color: transparent;
+    }
+    & h3 {
+        background-color: transparent;
+        margin:0;
+    } 
+}
+.flexIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.flexIcon a {
+    color: goldenrod;
+    font-size: 20px;
+    border-radius: 30%;
+    background-color: white;
+    border:2px solid white;
+    justify-content: center;
+    align-items: center;
+}
+.bxl-facebook-square {
+    color: blue;
+}
+.flexContainer3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:1300px) {
+    .flexEmail {
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+        background-color: transparent;
+        padding: 5px;
+        margin-top : 20px;
+        & input{
+            /* border:black; */
+            height: 30px;
+            width: auto;
+            border-radius: 20px;
+            color: black;
+            border-color: black;
+            background-color: white;
+        }
+        & a{
+            background-color: transparent;
+        }
+    }
+    .flexEmail button{
+        background-color: black;
+        height: 30px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+    }
+}
+@media (max-width:600px) {
+    .flexfoot1 h1 {
+        display: none;
+    }
+    .flexContainer3 {
+        display: none;
+    }
+    .flexContainerContent1 {
+        display: none;
+    }
+}

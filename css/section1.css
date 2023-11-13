@@ -1,0 +1,89 @@
+.introWeb {
+    width: 100%;
+    text-align: center; 
+    justify-content: center;
+  }
+  
+  .introWeb video {
+    width: 100%;
+    height: 70vh;
+    display:block;
+    object-fit: cover;
+    animation-duration: 5s;
+    animation-name: fadein;
+  }
+  
+  .introWeb .textVideo {
+    position: absolute;
+    flex-direction: column;
+    max-width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    background-color: transparent;
+    /* padding: 2vw; */
+
+  }
+  .textVideo h2 {
+    background-color: transparent;
+    color: rgb(74, 74, 74);
+    width: auto;
+    margin: 5px;
+  }
+  .textVideo h3 {
+    font-size: 2.5rem;
+    background-color: transparent;
+    color: red;
+  }
+  .textVideo a button {
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+  }
+  .textVideo button:hover {
+    background-color: goldenrod;
+}
+  @keyframes fadein {
+    0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+  }
+  @media (max-width:1400px) {
+    .introWeb video {
+        width: 100%;
+        height: 33vw;
+        display:block;
+        object-fit: cover;
+        animation-duration: 5s;
+        animation-name: fadein;
+      }
+      .introWeb .textVideo {
+        position: absolute;
+        flex-direction: column;
+        width: auto;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        background-color: transparent;
+        padding: 2vw;
+      }
+  }
+  @media (max-width: 970px) {
+    .introWeb .textVideo {
+      display: none;
+    }
+
+  }
+  
