@@ -98,11 +98,15 @@ function scrollGrid(direction) {
     gridContainer.style.transform = `translateX(${translateValue}px)`;
 }
 function toggleIconsSide() {
-    const leftArrow = document.querySelector(".leftArrow");
     const iconsSide = document.querySelector(".iconsSide");
-    leftArrow.classList.toggle("middle");
+    const leftArrow = document.querySelector(".leftArrow");
     iconsSide.classList.toggle("show");
     leftArrow.classList.toggle("rotate");
+
+}
+function toggleSideIcon() {
+    const sideContactGrid = document.querySelector(".sideContactGrid");
+    sideContactGrid.classList.toggle("moveSide")
     console.log("tes");
 }
 
