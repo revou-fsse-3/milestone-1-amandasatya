@@ -32,6 +32,7 @@ if (preloader.style.display != 'none') {
         preloader.style.display = "none";
         content.style.display = "block";
         content2.style.display = "block";
+
         // localStorage.setItem('savedLog', 'false');
     } else {
         setTimeout(() => {
