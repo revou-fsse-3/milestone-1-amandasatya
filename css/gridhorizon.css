@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 500px;
-  object-fit: cover;
+  background-color: whitesmoke;
   overflow: hidden;
 }
 /* .horizonFlex h3 {
@@ -103,7 +103,7 @@
   flex: 0 0 auto;
   width: 250px;
   height: 300px;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 10px;
   & h2 {
     margin: 10px;
@@ -117,4 +117,37 @@
   object-fit: cover;
   overflow: hidden;
   border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .horizonGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+  }
+  .flexhorizon {
+    display: none;
+  }
+  .horizon1 {
+    display: none;
+  }
+  .grid-container {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+    & img {
+      object-fit: cover;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .buttonPlusMinus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
 }

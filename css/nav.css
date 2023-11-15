@@ -2,9 +2,28 @@
   font-family: "Cooper Bold";
   src: url(/font/Cooper\ Bold\ BT.ttf);
 }
+@font-face {
+  font-family: "gotham";
+  src: url(../font/GothamMedium.ttf);
+}
+@font-face {
+  font-family: "gotham light";
+  src: url(../font/Gotham-Light.otf);
+}
+@font-face {
+  font-family: "gotham thin";
+  src: url(../font/Gotham-Thin.otf);
+}
+@font-face {
+  font-family: "gotham bold";
+  src: url(../font/GothamBold.ttf);
+}
+@font-face {
+  font-family: "gotham book";
+  src: url(../font/GothamBook.ttf);
+}
 * {
   /* background-color: white; */
-  object-fit: cover;
   text-decoration: none;
   gap: 10px;
   color: black;
@@ -104,6 +123,7 @@ body {
   text-decoration: none;
   background-color: transparent;
   font-family: "Cooper Bold";
+
   & a {
     color: rgba(19, 19, 19, 0.812);
     background-color: transparent;
@@ -126,7 +146,7 @@ input[type="search"] {
   font-size: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .hamburger {
     flex-direction: column;
     cursor: pointer;
@@ -146,16 +166,17 @@ input[type="search"] {
   .nav1 {
     display: none;
     flex-direction: column;
-    background: red;
-    opacity: 0;
+    background-color: black;
+    height: 200px;
     transition: all 0.3s;
     & a {
       color: white;
+      background-color: black;
     }
   }
   .nav-flex {
     position: sticky;
-    top: 0; /* Adjust this value according to your design */
+    top: 0;
     align-items: center;
     font-size: 15px;
     z-index: 9999;
@@ -166,14 +187,15 @@ input[type="search"] {
       } */
   .nav1.active {
     left: 0;
-    top: 10%;
+    top: 100%;
     right: 0;
-    position: fixed;
+    height: 150px;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin: 20px; */
-    opacity: 1;
+    opacity: 2;
     background-color: black;
     border: none;
     animation-duration: 2s;
@@ -202,14 +224,21 @@ input[type="search"] {
     display: none;
   }
   .nav1 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 800px;
-    height: 60px;
+    height: 200px;
     line-height: 0;
     gap: 0;
   }
 }
 @media (max-width: 1000px) {
+  .nav1 {
+    font-size: 1.3rem;
+    font-weight: 800px;
+    height: 60px;
+    line-height: 0;
+    gap: 0;
+  }
   .nav-flex {
     display: flex;
     justify-content: space-evenly;

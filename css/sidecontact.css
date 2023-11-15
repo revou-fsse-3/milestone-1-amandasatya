@@ -1,156 +1,156 @@
 .sideContactGrid {
-    display: grid;
-    grid-template-areas: 'arrow icons';
-    grid-template-columns: auto 1fr;
-    position: fixed;
-    top: 50%;
-    right: -3.5%;
-    
-    /* bottom: 2%; */
+  display: grid;
+  grid-template-areas: "arrow icons";
+  grid-template-columns: auto 1fr;
+  position: fixed;
+  top: 50%;
+  right: -3.5%;
+
+  /* bottom: 2%; */
 }
 .sideContactGrid.moveSide {
-    right: 2%;
-    transition:right 0.5s ease-in;
+  right: 2%;
+  transition: right 0.5s ease-in;
 }
 
 .leftArrow {
-    grid-area: arrow;
+  grid-area: arrow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.iconsSide {
+  grid-area: icons;
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease; /* Add transition effect */
+  & h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-.iconsSide {
-    grid-area: icons;
-    height: 100%;
-    width: 100%;
-    position: sticky;
-    overflow: hidden; 
-    height: 0;
-    transition: height 0.5s ease; /* Add transition effect */
-    & h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        border: none;
-        background-color: goldenrod;
-        border-radius: 5px;
-        height: 40px;
-        width: 100px;
-        color: white;
-    }
+    margin: 0;
+    border: none;
+    background-color: #7fcbd7;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    color: white;
+  }
 }
 
 .leftArrow.rotate {
-    transform:  rotate(180deg);
+  transform: rotate(180deg);
 }
 .iconsSide.show {
-    height: 150px; 
+  height: 150px;
 }
 
 .leftArrow .bx {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: goldenrod;
-    cursor: pointer;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7fcbd7;
+  cursor: pointer;
 }
 
 .iconsSide .bx {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    /* color: goldenrod; */
-    cursor: pointer;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  /* color: goldenrod; */
+  cursor: pointer;
 }
 
-@media (max-width:1300px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -6%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 1300px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -6%;
+
+    /* bottom: 2%; */
+  }
 }
-@media (max-width:1000px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -7%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 1000px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -7%;
+
+    /* bottom: 2%; */
+  }
 }
-@media (max-width:900px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -10%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 900px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -10%;
+
+    /* bottom: 2%; */
+  }
 }
-@media (max-width:700px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -13%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 700px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -13%;
+
+    /* bottom: 2%; */
+  }
 }
-@media (max-width:600px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -15%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 600px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -15%;
+
+    /* bottom: 2%; */
+  }
 }
-@media (max-width:500px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -17%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 500px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -17%;
+
+    /* bottom: 2%; */
+  }
 }
-@media (max-width:400px) {
-    .sideContactGrid {
-        display: grid;
-        grid-template-areas: 'arrow icons';
-        grid-template-columns: auto 1fr;
-        position: fixed;
-        top: 50%;
-        right: -22%;
-        
-        /* bottom: 2%; */
-    }
+@media (max-width: 400px) {
+  .sideContactGrid {
+    display: grid;
+    grid-template-areas: "arrow icons";
+    grid-template-columns: auto 1fr;
+    position: fixed;
+    top: 50%;
+    right: -22%;
+
+    /* bottom: 2%; */
+  }
 }
