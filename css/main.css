@@ -12,6 +12,7 @@
     padding: 5px;
     margin: 0px;
     background-color: transparent;
+    font-size: 2rem;
     font-weight: bolder;
     font-family: "gotham bold";
     height: 60px;
@@ -183,7 +184,7 @@
     max-width: auto;
   }
 }
-@media (max-width: 3750px) {
+@media (max-width: 375px) {
   .introMain h1 {
     display: flex;
     justify-content: center;
