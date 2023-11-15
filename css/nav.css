@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Cooper Bold';
+  font-family: "Cooper Bold";
   src: url(/font/Cooper\ Bold\ BT.ttf);
 }
 * {
-    /* background-color: white; */
-    object-fit: cover;
-    text-decoration: none;
-    gap: 10px;
-    color: black;
+  /* background-color: white; */
+  object-fit: cover;
+  text-decoration: none;
+  gap: 10px;
+  color: black;
 }
 body {
   margin: 0;
@@ -81,38 +81,37 @@ body {
   }
 } */
 
-
 .nav-flex {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: transparent;
-    align-items: center;
-    font-size: 20px;
-    position: relative;
-    z-index: 9999;
-    /* gap: 20px; */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: transparent;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+  z-index: 9999;
+  /* gap: 20px; */
 }
 .nav-flex img {
   height: auto;
   width: 250px;
 }
 .nav1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin: 10px;
     padding: 5px; */
-    text-decoration: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: "Cooper Bold";
+  & a {
+    color: rgba(19, 19, 19, 0.812);
     background-color: transparent;
-    font-family: 'Cooper Bold';
-    &  a {
-        color: rgba(19, 19, 19, 0.812);
-        background-color: transparent;
-        margin: 20px;
-    }
+    margin: 20px;
+  }
 }
 .nav1 a:hover {
-    color: goldenrod;
+  color: goldenrod;
 }
 input[type="search"] {
   border-radius: 5px;
@@ -127,68 +126,67 @@ input[type="search"] {
   font-size: 30px;
 }
 
-
-@media (max-width:600px) {
-    .hamburger {
-        flex-direction: column;
-        cursor: pointer;
-        padding: 5px;
-        margin: 5px;
-      }
-      .bar {
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-      .navSearch {
-        display: none;
-      }
-      .nav1 {
-        display: none;
-        flex-direction: column;
-        background: red;
-        opacity: 0;
-        transition: all 0.3s;
-         & a {
-          color: white;
-         }
-      }
-      .nav-flex {
-        position: sticky;
-        top: 0; /* Adjust this value according to your design */
-        align-items: center;
-        font-size: 15px;
-        z-index: 9999;
-        /* gap: 20px; */
+@media (max-width: 600px) {
+  .hamburger {
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+  }
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .navSearch {
+    display: none;
+  }
+  .nav1 {
+    display: none;
+    flex-direction: column;
+    background: red;
+    opacity: 0;
+    transition: all 0.3s;
+    & a {
+      color: white;
     }
-      /* .hamburger.active {
+  }
+  .nav-flex {
+    position: sticky;
+    top: 0; /* Adjust this value according to your design */
+    align-items: center;
+    font-size: 15px;
+    z-index: 9999;
+    /* gap: 20px; */
+  }
+  /* .hamburger.active {
         margin-right: 40px;
       } */
-      .nav1.active {
-        left: 0;
-        top: 10%;
-        right: 0;
-        position:fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* margin: 20px; */
-        opacity: 1;
-        background-color: black;
-        border: none;
-        animation-duration: 2s;
-        animation-name: fadein;
-      }
-      @keyframes fadein {
-        0% {
-            opacity:0;
-          }
-          50% {
-            opacity:1;
-          }
-      } 
+  .nav1.active {
+    left: 0;
+    top: 10%;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    opacity: 1;
+    background-color: black;
+    border: none;
+    animation-duration: 2s;
+    animation-name: fadein;
+  }
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
 }
 /* @media (max-width: 768px) {
   .announce1, 
@@ -199,12 +197,19 @@ input[type="search"] {
     animation-duration: 10s; 
   }
 } */
-@media (max-width:884px) {
+@media (max-width: 884px) {
   .navSearch {
     display: none;
   }
+  .nav1 {
+    font-size: 0.8rem;
+    font-weight: 800px;
+    height: 60px;
+    line-height: 0;
+    gap: 0;
+  }
 }
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .nav-flex {
     display: flex;
     justify-content: space-evenly;
@@ -214,5 +219,5 @@ input[type="search"] {
     position: relative;
     z-index: 9999;
     /* gap: 20px; */
-}
+  }
 }

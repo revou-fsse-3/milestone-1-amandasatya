@@ -1,124 +1,125 @@
 .flexInGrid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 .troleygrid {
-    display: grid;
-    grid-template-areas: 
-    'cart1 image1';
-    grid-template-columns: 35% 65%;
-    width: 100%;
-    overflow: hidden;
-    padding: 5px;
-    margin: 10px;
-    gap: 80px;
-    
+  display: grid;
+  grid-template-areas: "cart1 image1";
+  grid-template-columns: 35% 65%;
+  width: 100%;
+  overflow: hidden;
+  padding: 5px;
+  margin: 10px;
+  gap: 80px;
 }
 .troleysection1 {
-    grid-area: cart1;
-    height: 100%;
-    width: 100%;
-    margin:20px;
+  grid-area: cart1;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
 }
 .troleysection2 {
-    grid-area: image1;
+  grid-area: image1;
 }
 .troleyflexcolumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  & h1 {
+    font-size: 40px;
+    width: auto;
     margin: 0;
-    & h1 {
-        font-size: 40px;
-        width: auto;
-        margin: 0;
-    }
-    & h3 {
-        line-height: 1;
-        margin: 0px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 500;
-    }
-    & h4 {
-        margin: 5px;
-    }
+  }
+  & h3 {
+    line-height: 1;
+    margin: 0px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 500;
+  }
+  & h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600px;
+    margin: 0;
+  }
 }
 .troleyflex {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 .rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .checked {
-    color: gold;
+  color: gold;
 }
-.flex2button  {
-   display: grid;
-   grid-template-areas: 'juice1 herbs1';
-   grid-template-columns: 50% 50%;
-   margin: 10px;
+.flex2button {
+  display: grid;
+  grid-template-areas: "juice1 herbs1";
+  grid-template-columns: 50% 50%;
+  margin: 10px;
 }
 button {
-    height: 50px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    background-color: #7fcbd7;
-    color: black;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #7fcbd7;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
 }
 button:hover {
-    background-color: goldenrod;
+  background-color: goldenrod;
 }
 
 .grid6button {
-    display: grid;
-    grid-template-areas: 
-    'buttonGrid1 buttonGrid2 buttonGrid3'
-    'buttonGrid4 buttonGrid5 buttonGrid6';
-    grid-template-columns: 33% 33% 33%;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
+  display: grid;
+  grid-template-areas:
+    "buttonGrid1 buttonGrid2 buttonGrid3"
+    "buttonGrid4 buttonGrid5 buttonGrid6";
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
 .gridbutton1 {
-    grid-area : buttonGrid1;
+  grid-area: buttonGrid1;
 }
 .gridbutton2 {
-    grid-area : buttonGrid2;
+  grid-area: buttonGrid2;
 }
 .gridbutton3 {
-    grid-area : buttonGrid3;
+  grid-area: buttonGrid3;
 }
 .gridbutton4 {
-    grid-area : buttonGrid4;
+  grid-area: buttonGrid4;
 }
 .gridbutton5 {
-    grid-area : buttonGrid5;
+  grid-area: buttonGrid5;
 }
 .gridbutton6 {
-    grid-area : buttonGrid6;
+  grid-area: buttonGrid6;
 }
 
 .grid3items {
-    display: grid;
-    grid-template-areas: 'cart2 cart3';
-    grid-template-columns: 50% 50%;
-    gap: 10px;
+  display: grid;
+  grid-template-areas: "cart2 cart3";
+  grid-template-columns: 50% 50%;
+  gap: 10px;
 }
 
 /* .priceTag {
@@ -128,239 +129,238 @@ button:hover {
     align-items: center;
 } */
 .quantityGrid {
-    grid-area: cart2;
+  grid-area: cart2;
 }
 .quantityFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    & h5 {
-        font-size: 20px;
-        height: 10px;
-        margin: 3px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  & h5 {
+    font-size: 20px;
+    height: 10px;
+    margin: 3px;
+  }
 }
 .number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    & h5 {
-        font-size: 50px;
-    }
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & h5 {
+    font-size: 50px;
+  }
 }
 .number input {
-    height:34px;
-    width: 100px;
-    text-align: center;
-    font-size: 26px;
-    border:1px solid #ddd;
-    border-radius:4px;
-    display: inline-block;
-    vertical-align: middle;
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
 }
-.minus, .plus{
-    width:20px;
-    height:20px;
-    background:#f2f2f2;
-    border-radius:4px;
-    padding:8px 5px 8px 5px;
-    border:1px solid #ddd;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+.minus,
+.plus {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 .buttonforquantity {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    & h4 {
-        cursor: pointer;
-        color: red;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  & h4 {
+    cursor: pointer;
+    color: red;
+  }
 }
 .buttonQuantity button {
-    border: none;
-    border-radius: 5px;
-    height:50px;
-    width: 120px;
-    background-color: #7fcbd7;
-    color: black;
-    cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 6rem;
+  background-color: #7fcbd7;
+  color: black;
+  cursor: pointer;
 }
 .buttonQuantity button:hover {
-    border: none;
-    border-radius: 5px;
-    height:50px;
-    width: 120px;
-    background-color: goldenrod;
-    color: black;
-    cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 120px;
+  background-color: goldenrod;
+  color: black;
+  cursor: pointer;
 }
 .trolsectGrid2 {
-    display: grid;
-    grid-template-areas: 
-    'sect2grid1 sect2grid1 sect2grid3 sect2grid3'
-    'sect2grid1 sect2grid1 sect2grid3 sect2grid3'
-    'sect2grid1 sect2grid1 sect2grid4 sect2grid4'
-    'sect2grid2 sect2grid2 sect2grid4 sect2grid4';
-    height: 50vh;
-    width: 100%;
-    object-fit: contain;
-    overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "sect2grid1 sect2grid1 sect2grid3 sect2grid3"
+    "sect2grid1 sect2grid1 sect2grid3 sect2grid3"
+    "sect2grid1 sect2grid1 sect2grid4 sect2grid4"
+    "sect2grid2 sect2grid2 sect2grid4 sect2grid4";
+  height: 50vh;
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }
 .gridTroley1 {
-    grid-area: sect2grid1;
+  grid-area: sect2grid1;
+  object-fit: cover;
+  overflow: hidden;
+  & img {
     object-fit: cover;
     overflow: hidden;
-    & img  {
-        object-fit: cover;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 10px;
-    }
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
 }
 .gridTroley2 {
-    grid-area: sect2grid2;
-    object-fit: cover;
-    overflow: hidden;
+  grid-area: sect2grid2;
+  object-fit: cover;
+  overflow: hidden;
 }
 .troleydesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridTroley3 {
+  grid-area: sect2grid3;
+  object-fit: cover;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+}
+.gridTroley4 {
+  grid-area: sect2grid4;
+  object-fit: cover;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+}
+.gridTroley5 {
+  grid-area: sect2grid5;
+  object-fit: cover;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .troleygrid {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    margin: auto;
+    width: auto;
+  }
+  .troleysection1 {
+    grid-area: cart1;
+    height: 100%;
+    width: 100%;
+  }
+  .troleysection2 {
+    display: none;
+  }
+  .grid6button {
+    display: grid;
+    grid-template-areas:
+      "buttonGrid1 buttonGrid2 buttonGrid3"
+      "buttonGrid4 buttonGrid5 buttonGrid6";
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: auto;
+    & button {
+      height: 35px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      background-color: #7fcbd7;
+      color: black;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
 }
-.gridTroley3 {
-    grid-area: sect2grid3;
-    object-fit: cover;
-    overflow: hidden;
-    & img  {
-        object-fit: cover;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 10px;
-    }
-}
-.gridTroley4 {
-    grid-area: sect2grid4;
-    object-fit: cover;
-    overflow: hidden;
-    & img  {
-        object-fit: cover;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 10px;
-    }
-}
-.gridTroley5 {
-    grid-area: sect2grid5;
-    object-fit: cover;
-    overflow: hidden;
-    & img  {
-        object-fit: cover;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 10px;
-    }
-}
-
-
-@media (max-width:800px) {
-    .troleygrid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        margin: auto;
-        width: auto;
-    }
-    .troleysection1 {
-        grid-area: cart1;
-        height: 100%;
-        width: 100%;
-    }
-    .troleysection2 {
-        display: none;
-    }
-    .grid6button {
-        display: grid;
-        grid-template-areas: 
-        'buttonGrid1 buttonGrid2 buttonGrid3'
-        'buttonGrid4 buttonGrid5 buttonGrid6';
-        grid-template-columns: 33% 33% 33%;
-        justify-content: space-evenly;
-        align-items: center;
-        width: auto;
-        height: auto;
-        & button {
-            height: 35px;
-            width: 100%;
-            border: none;
-            border-radius: 5px;
-            background-color: #7fcbd7;
-            color: black;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-        }
-    }
-}
-@media (max-width:400px) {
-    .buttonQuantity button {
-        border: none;
-        border-radius: 5px;
-        height:50px;
-        width: auto;
-        background-color: rgb(250, 190, 36);
-        color: black;
-        cursor: pointer;
-    }
-    .number input {
-        height:auto;
-        width: 30px;
-        text-align: center;
-        font-size: auto;
-        border:1px solid #ddd;
-        border-radius:4px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .minus, .plus{
-        width:auto;
-        height:auto;
-        background:#f2f2f2;
-        border-radius:4px;
-        padding:8px 5px 8px 5px;
-        border:1px solid #ddd;
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
-    }
-    .troleyflex {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        
-    }
-    .rating {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
-    .reviews {
-        display: none;
-    }
+@media (max-width: 400px) {
+  .buttonQuantity button {
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: auto;
+    background-color: rgb(250, 190, 36);
+    color: black;
+    cursor: pointer;
+  }
+  .number input {
+    height: auto;
+    width: 30px;
+    text-align: center;
+    font-size: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .minus,
+  .plus {
+    width: auto;
+    height: auto;
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 8px 5px 8px 5px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .troleyflex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .reviews {
+    display: none;
+  }
 }
