@@ -36,13 +36,13 @@
   justify-content: center;
   align-items: center;
   font-weight: 200;
-  font-family: "gotham bold";
+  font-family: "gotham light";
 }
 .flexhorizon h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "gotham bold";
+  font-family: "gotham light";
 }
 .horizon1 button {
   height: 50px;

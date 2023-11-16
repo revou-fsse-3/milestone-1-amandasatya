@@ -14,7 +14,7 @@
     background-color: transparent;
     font-size: 2rem;
     font-weight: bolder;
-    font-family: "gotham bold";
+    font-family: "gotham light";
     height: 60px;
   }
   & h3 {
@@ -118,7 +118,7 @@
     padding: 0;
     margin: 0;
     background-color: transparent;
-    font-family: "gotham bold";
+    font-family: "gotham light";
     font-size: 2rem;
   }
   .introMain h3 {
