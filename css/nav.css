@@ -127,7 +127,7 @@ body {
   }
 }
 .nav1 a:hover {
-  color: transparent;
+  color: white;
   background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
   -webkit-background-clip: text;
   background-clip: text;

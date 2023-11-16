@@ -78,9 +78,9 @@ button {
   border: none;
   border-radius: 5px;
   background-color: #7fcbd7;
-  color: black;
+  color: white;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
 button:hover {
@@ -88,6 +88,7 @@ button:hover {
   background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
   -webkit-background-clip: border-box;
   background-clip: border-box;
+  color: black;
 }
 
 .grid6button {
@@ -199,7 +200,7 @@ button:hover {
   height: 50px;
   width: 100%;
   background-color: #7fcbd7;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 .buttonQuantity button:hover {
@@ -329,7 +330,7 @@ button:hover {
       border: none;
       border-radius: 5px;
       background-color: #7fcbd7;
-      color: black;
+      color: white;
       font-size: 15px;
       font-weight: 500;
       cursor: pointer;

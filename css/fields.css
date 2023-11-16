@@ -20,13 +20,13 @@ legend {
   font-size: 20px;
   font-weight: 600;
   /* margin-left: calc(15% - 35px - 8px); */
-  font-family: "gotham bold";
+  font-family: "gotham light";
 }
 .introMarket {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "gotham book";
+  font-family: "gotham light";
   font-weight: 100;
 }
 .marketIcon {
