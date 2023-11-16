@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 .textVideo button:hover {
-  background-color: goldenrod;
+  color: black;
 }
 @keyframes fadein {
   0% {

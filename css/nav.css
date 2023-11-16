@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "Cooper Bold";
-  src: url(/font/Cooper\ Bold\ BT.ttf);
-}
-@font-face {
   font-family: "gotham";
   src: url(../font/GothamMedium.ttf);
 }
@@ -122,7 +118,7 @@ body {
     padding: 5px; */
   text-decoration: none;
   background-color: transparent;
-  font-family: "Cooper Bold";
+  font-family: "gotham light";
 
   & a {
     color: rgba(19, 19, 19, 0.812);
@@ -131,7 +127,10 @@ body {
   }
 }
 .nav1 a:hover {
-  color: goldenrod;
+  color: transparent;
+  background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 input[type="search"] {
   border-radius: 5px;

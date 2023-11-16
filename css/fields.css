@@ -20,7 +20,7 @@ legend {
   font-size: 20px;
   font-weight: 600;
   /* margin-left: calc(15% - 35px - 8px); */
-  font-family: "Cooper Bold";
+  font-family: "gotham bold";
 }
 .introMarket {
   display: flex;

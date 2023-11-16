@@ -67,7 +67,10 @@
   display: grid;
   grid-template-areas: "juice1 herbs1";
   grid-template-columns: 50% 50%;
-  margin: 10px;
+  margin: 0;
+}
+.flex2button button {
+  width: 100%;
 }
 button {
   height: 50px;
@@ -81,7 +84,10 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: goldenrod;
+  /* color: transparent; */
+  background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
 }
 
 .grid6button {
@@ -153,7 +159,7 @@ button:hover {
 }
 .number input {
   height: 34px;
-  width: 100px;
+  width: 100%;
   text-align: center;
   font-size: 26px;
   border: 1px solid #ddd;
@@ -178,16 +184,20 @@ button:hover {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   & h4 {
     cursor: pointer;
     color: red;
   }
 }
+.buttonQuantity {
+  width: 100%;
+}
 .buttonQuantity button {
   border: none;
   border-radius: 5px;
   height: 50px;
-  width: 6rem;
+  width: 100%;
   background-color: #7fcbd7;
   color: black;
   cursor: pointer;
@@ -196,7 +206,7 @@ button:hover {
   border: none;
   border-radius: 5px;
   height: 50px;
-  width: 120px;
+  width: 100%;
   background-color: goldenrod;
   color: black;
   cursor: pointer;
@@ -237,6 +247,14 @@ button:hover {
   justify-content: center;
   align-items: center;
   font-family: "gotham book";
+  & h2 {
+    padding: 10px;
+    font-size: 1.8rem;
+    color: transparent;
+    background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 .gridTroley3 {
   grid-area: sect2grid3;
@@ -330,7 +348,7 @@ button:hover {
   }
   .number input {
     height: auto;
-    width: 30px;
+    width: 100%;
     text-align: center;
     font-size: auto;
     border: 1px solid #ddd;
@@ -349,6 +367,12 @@ button:hover {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+  }
+  .buttonQuantity {
+    width: 100%;
+  }
+  .buttonQuantity button {
+    width: 100%;
   }
   .troleyflex {
     display: flex;

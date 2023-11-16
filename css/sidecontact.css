@@ -56,8 +56,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #7fcbd7;
   cursor: pointer;
+  color: transparent;
+  background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .iconsSide .bx {
