@@ -28,20 +28,25 @@ body {
   margin: 0;
   padding: 0;
 }
-/* .intronav {
+.intronav {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #7fcbd7;
   height: 40px;
-  overflow-x: hidden;
 }
 
 .intronav p {
   background-color: transparent;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  animation: beat 0.4s infinite alternate;
 }
-
+@keyframes beat {
+  to {
+    transform: scale(1.2);
+  }
+}
+/* 
 .announce1,
 .announce2,
 .announce3 {
