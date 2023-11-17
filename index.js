@@ -12,12 +12,15 @@ menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
 });
 // save preloader
-if (preloader.style.display != 'none') {
+const preloader = document.getElementById("preloader");
+const content = document.querySelector('.navbro');
+const content2 = document.querySelector('.introWeb');
+const sideContactGrid = document.querySelector('.sideContactGrid')
+const intronav = document.querySelector('.intronav')
+if (preloader.style.display !== 'none') {
+    sideContactGrid.style.display = 'none'
+    intronav.style.display = 'none'
     setTimeout(() => {
-        const preloader = document.getElementById("preloader");
-        const content = document.querySelector('.navbro');
-        const content2 = document.querySelector('.introWeb');
-
         preloader.style.display = "none";
         content.style.display = "block";
         content2.style.display = "block";
@@ -25,13 +28,11 @@ if (preloader.style.display != 'none') {
         console.log('savedLog')
     }, 4000)
     if (localStorage.getItem('savedLog') === 'true') {
-        const preloader = document.getElementById("preloader");
-        const content = document.querySelector('.navbro');
-        const content2 = document.querySelector('.introWeb');
-
         preloader.style.display = "none";
         content.style.display = "block";
         content2.style.display = "block";
+        sideContactGrid.style.display = 'grid'
+        intronav.style.display = 'flex'
 
         // localStorage.setItem('savedLog', 'false');
     } else {
@@ -39,10 +40,13 @@ if (preloader.style.display != 'none') {
             const preloader = document.getElementById("preloader");
             const content = document.querySelector('.navbro');
             const content2 = document.querySelector('.introWeb');
+            const sideContactGrid = document.querySelector('.sideContactGrid')
 
             preloader.style.display = "none";
             content.style.display = "block";
             content2.style.display = "block";
+            sideContactGrid.style.display = 'grid'
+            intronav.style.display = 'flex'
             localStorage.setItem('savedLog', 'true');
             console.log('savedLog');
         }, 4000);
@@ -53,10 +57,13 @@ if (preloader.style.display != 'none') {
         const preloader = document.getElementById("preloader");
         const content = document.querySelector('.navbro');
         const content2 = document.querySelector('.introWeb');
+        const sideContactGrid = document.querySelector('.sideContactGrid')
 
         preloader.style.display = "none";
         content.style.display = "block";
         content2.style.display = "block";
+        sideContactGrid.style.display = 'grid'
+        intronav.style.display = 'flex'
         localStorage.setItem('savedLog', 'false')
         console.log('savedLog')
     }, 0)
