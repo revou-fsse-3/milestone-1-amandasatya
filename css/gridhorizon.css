@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  height: auto;
   background-color: whitesmoke;
   overflow: hidden;
 }

@@ -9,7 +9,7 @@
 .troleygrid {
   display: grid;
   grid-template-areas: "cart1 image1";
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 30% 70%;
   width: 100%;
   overflow: hidden;
   padding: 5px;

@@ -127,14 +127,15 @@ body {
   }
 }
 .nav1 a:hover {
-  color: white;
-  background: linear-gradient(to right, #12c2e9, #71eddc, rgb(188, 230, 4));
+  color: transparent;
+  background: linear-gradient(to right, #12c2e9, #7171ed, rgb(188, 230, 4));
   -webkit-background-clip: text;
   background-clip: text;
 }
 input[type="search"] {
   border-radius: 5px;
   height: 30px;
+  width: 12rem;
 }
 .navSearch {
   display: flex;
@@ -218,19 +219,29 @@ input[type="search"] {
     animation-duration: 10s; 
   }
 } */
-@media (max-width: 884px) {
-  .navSearch {
-    display: none;
-  }
+@media (max-width: 760px) {
   .nav1 {
-    font-size: 1.2rem;
+    font-size: 5px;
     font-weight: 800px;
     height: 200px;
     line-height: 0;
     gap: 0;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 884px) {
+  .nav1 {
+    /* font-size: 1.2rem; */
+    font-weight: 800px;
+    height: 200px;
+    line-height: 0;
+    gap: 0;
+  }
+  & a {
+    font-size: 17px;
+    font-weight: 800;
+  }
+}
+@media (max-width: 1050px) {
   .nav1 {
     font-size: 1.3rem;
     font-weight: 800px;
@@ -247,5 +258,8 @@ input[type="search"] {
     position: relative;
     z-index: 9999;
     /* gap: 20px; */
+  }
+  .navSearch {
+    display: none;
   }
 }
