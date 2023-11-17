@@ -37,6 +37,7 @@ body {
 }
 
 .intronav p {
+  text-align: center;
   background-color: transparent;
   font-family: "Courier New", Courier, monospace;
   animation: beat 0.4s infinite alternate;
